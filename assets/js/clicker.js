@@ -79,3 +79,4 @@ boostButton.addEventListener("click", function(){
 		boostLevel++;
 	}
 });
+console.log("pouet");
