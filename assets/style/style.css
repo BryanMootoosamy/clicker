@@ -1,23 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Gamja+Flower");
 body {
-  text-align: center; }
-  body .display {
-    background-image: url("../pics/bridou.png");
+  text-align: center;
+  background-image: url("../pics/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh; }
+  body .central .display {
     width: 30vw;
     height: 40vh;
     background-repeat: no-repeat;
-    margin-left: 35vw;
-    border: 1px solid black; }
+    margin-left: 35vw; }
 
 #multiplier {
   width: 12vw;
-  height: 12vh; }
+  height: 12vh;
+  border-radius: 50%;
+  transform: rotate(90deg); }
 
 #autoclick {
   width: 12vw;
-  height: 8vh; }
+  height: 8vh;
+  border-radius: 50%; }
 
 #boost {
   width: 12vw;
-  height: 8vh; }
+  height: 8vh;
+  border-radius: 50%; }
+
+#click {
+  height: 12vh;
+  width: 6vw;
+  border-radius: 50%;
+  background-color: #BD3D36;
+  border-style: none;
+  font-family: "Gamja Flower";
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=style.css.map */
