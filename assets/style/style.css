@@ -1,0 +1,23 @@
+body {
+  text-align: center; }
+  body .display {
+    background-image: url("../pics/bridou.png");
+    width: 30vw;
+    height: 40vh;
+    background-repeat: no-repeat;
+    margin-left: 35vw;
+    border: 1px solid black; }
+
+#multiplier {
+  width: 12vw;
+  height: 12vh; }
+
+#autoclick {
+  width: 12vw;
+  height: 8vh; }
+
+#boost {
+  width: 12vw;
+  height: 8vh; }
+
+/*# sourceMappingURL=style.css.map */
