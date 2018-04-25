@@ -4,35 +4,171 @@ body {
   background-image: url("../pics/background.jpg");
   background-repeat: no-repeat;
   background-size: 100vw 100vh; }
-  body .central .display {
-    width: 30vw;
-    height: 40vh;
-    background-repeat: no-repeat;
-    margin-left: 35vw; }
+  body h1 {
+    font-family: "Gamja Flower";
+    font-size: 6em; }
+  body .central {
+    display: flex; }
+    body .central .display {
+      font-size: 5em;
+      font-family: "Gamja Flower";
+      width: 30vw;
+      height: 40vh;
+      background-repeat: no-repeat;
+      margin-left: 35vw; }
+    body .central .bonus {
+      margin-left: 5vw;
+      padding-top: 8vh; }
+      body .central .bonus h3 {
+        font-family: "Gamja Flower";
+        font-size: 3em;
+        position: fixed;
+        top: 15vh; }
 
 #multiplier {
-  width: 12vw;
+  width: 6vw;
   height: 12vh;
   border-radius: 50%;
-  transform: rotate(90deg); }
+  background-color: #BD3D36;
+  border: 2px solid white;
+  display: none; }
+  #multiplier #dot1 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 1.4vh;
+    margin-left: 1vw; }
+  #multiplier #dot2 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 2.8vh;
+    margin-left: 3vw; }
+  #multiplier #dot3 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    transform: translateY(-8vh);
+    margin-left: 3.5vw; }
+  #multiplier p {
+    transform: translateX(10vw);
+    position: fixed;
+    font-family: "Gamja Flower";
+    font-size: 2em; }
 
 #autoclick {
-  width: 12vw;
-  height: 8vh;
-  border-radius: 50%; }
+  width: 6vw;
+  height: 12vh;
+  border-radius: 50%;
+  background-color: #702F2B;
+  border: 2px solid white;
+  display: none; }
+  #autoclick #dot1 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 1.4vh;
+    margin-left: 1vw; }
+  #autoclick #dot2 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 2.8vh;
+    margin-left: 3vw; }
+  #autoclick #dot3 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    transform: translateY(-8vh);
+    margin-left: 3.5vw; }
+  #autoclick p {
+    transform: translateX(10vw);
+    position: fixed;
+    font-family: "Gamja Flower";
+    font-size: 2em; }
 
 #boost {
-  width: 12vw;
-  height: 8vh;
-  border-radius: 50%; }
+  width: 6vw;
+  height: 12vh;
+  border-radius: 50%;
+  background-color: green;
+  border: 2px solid white;
+  display: none; }
+  #boost #dot1 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 1.4vh;
+    margin-left: 1vw; }
+  #boost #dot2 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    margin-top: 2.8vh;
+    margin-left: 3vw; }
+  #boost #dot3 {
+    border-radius: 50%;
+    background-color: white;
+    height: 3vh;
+    width: 1.5vw;
+    transform: translateY(-8vh);
+    margin-left: 3.5vw; }
+  #boost p {
+    transform: translateX(10vw);
+    position: fixed;
+    font-family: "Gamja Flower";
+    font-size: 2em; }
+
+#sausageDisplay {
+  width: 24vw;
+  height: 48vh;
+  border-radius: 50%;
+  background-color: #BD3D36;
+  border: 4px solid white;
+  position: fixed; }
+  #sausageDisplay #dot4 {
+    border-radius: 50%;
+    background-color: white;
+    height: 9vh;
+    width: 4.5vw;
+    margin-top: 2.4vh;
+    margin-left: 11vw; }
+  #sausageDisplay #dot5 {
+    border-radius: 50%;
+    background-color: white;
+    height: 9vh;
+    width: 4.5vw;
+    margin-top: 2.8vh;
+    margin-left: 17vw; }
+  #sausageDisplay #dot6 {
+    border-radius: 50%;
+    background-color: white;
+    height: 9vh;
+    width: 4.5vw;
+    transform: translateY(4vh);
+    margin-left: 3.5vw; }
 
 #click {
   height: 12vh;
   width: 6vw;
   border-radius: 50%;
-  background-color: #BD3D36;
+  background-color: #BD615C;
   border-style: none;
   font-family: "Gamja Flower";
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  transform: translateY(-10vh); }
+
+#scoreDisplay {
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 11vw; }
 
 /*# sourceMappingURL=style.css.map */

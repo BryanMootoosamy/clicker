@@ -4,11 +4,11 @@ let score = 0;
 let display = document.getElementById("display");
 let button = document.getElementById("click");
 let bonusDisplay = document.getElementById("bonus");
-let bonus1;
 let boostInit = false;
 let multiplicateur = 1;
 let boostLevel = 0;
 let scoreDisplay = document.createElement("p");
+scoreDisplay.setAttribute("id", "scoreDisplay");
 button.innerHTML = "x" + multiplicateur  + " Prochain achat: " + (50*(multiplicateur));
 button.addEventListener("click",function(){
     if (boostInit == true) {
@@ -29,20 +29,11 @@ button.addEventListener("click",function(){
 	}
 });
 display.appendChild(scoreDisplay);
-bonus1 = document.createElement("img");
-bonus1.setAttribute("src", "assets/pics/bonus1.jpg");
-bonus1.setAttribute("id", "multiplier");
-bonus1.setAttribute("style", "display:none");
-let autoButton = document.createElement("img");
-autoButton.setAttribute("src", "assets/pics/autoclick.jpg");
-autoButton.setAttribute("id", "autoclick");
-autoButton.setAttribute("style", "display:none");
+let bonus1 = document.getElementById("multiplier");
+let autoButton = document.getElementById("autoclick");
 bonusDisplay.appendChild(bonus1);
 bonusDisplay.appendChild(autoButton);
-let boostButton = document.createElement("img");
-boostButton.setAttribute("src", "assets/pics/boost.png");
-boostButton.setAttribute("id", "boost");
-boostButton.setAttribute("style", "display:none");
+let boostButton = document.getElementById("boost");
 bonusDisplay.appendChild(boostButton);
 autoButton.addEventListener("click",function(){
 	if (score - (500 * (autoclickLevel + 1)) >= 0) {

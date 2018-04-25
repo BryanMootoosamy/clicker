@@ -1,11 +1,15 @@
 let augmenterMultiplicateur = () => {
     if (score >= 50 && ((score - (50 * multiplicateur) >= 0) && (score - (50 * autoclickLevel) >= 0)) ) {
         bonus1.setAttribute("style", "display:block");
+    } else {
+        bonus1.setAttribute("style", "display:none");
     }
 };
 let autoclicker = () => {
     if (score >= ( 500 + (500 * autoclickLevel)) && ((score - (500 + ( 500 * autoclickLevel))) >= 0)) {
         autoButton.setAttribute("style", "display:block");
+    } else {
+        autoButton.setAttribute("style", "display:none");
     }
 };
 let autoclickDisplay = () => {
